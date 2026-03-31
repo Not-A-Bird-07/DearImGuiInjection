@@ -10,6 +10,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
+[assembly: InternalsVisibleTo("DearImGuiInjection.MelonLoader")]
 [assembly: InternalsVisibleTo("DearImGuiInjection.BepInEx5")]
 [assembly: InternalsVisibleTo("DearImGuiInjection.BepInEx6")]
 [assembly: InternalsVisibleTo("DearImGuiInjection.BepInExIL2CPP")]
