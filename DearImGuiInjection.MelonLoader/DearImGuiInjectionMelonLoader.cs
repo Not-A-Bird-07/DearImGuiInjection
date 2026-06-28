@@ -16,8 +16,7 @@ internal class DearImGuiInjectionMelonLoader : MelonMod, ILoader
     public string ConfigPath => MelonEnvironment.UserDataDirectory;
     public string AssemblyPath => Path.GetDirectoryName(MelonAssembly.Location);
 
-    public override void OnInitializeMelon()
-    {
+    public override void OnLateInitializeMelon() {
         GameObject gameObject = new ();
         Object.DontDestroyOnLoad(gameObject);
         gameObject.hideFlags = HideFlags.HideAndDontSave;
